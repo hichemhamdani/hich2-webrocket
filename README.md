@@ -75,7 +75,7 @@ ssh-keygen -t ed25519 -C "webrocket-siteground" -f ~/.ssh/nom-projet-sg -N ""
 **3. Initialiser Git sur SiteGround** (une seule fois via SSH) :
 ```bash
 ssh -p PORT -i ~/.ssh/nom-projet-sg USERNAME@HOSTNAME
-cd /chemin/vers/public_html
+cd /home/customer/www/NOM-DU-SITE.roxy.cloud/public_html
 git init
 git remote add origin https://hichemhamdani:GH_TOKEN@github.com/hichemhamdani/NOM-REPO.git
 git fetch origin dev
@@ -83,6 +83,10 @@ git reset --hard origin/dev
 ```
 
 Après ça, chaque `git push` sur `dev` met le site à jour automatiquement.
+
+> **Note SiteGround** : le chemin `public_html` suit toujours ce format :
+> `/home/customer/www/NOM-DU-SITE.roxy.cloud/public_html`
+> Remplace juste le nom de domaine — `customer` reste identique pour tous les sites.
 
 ---
 
