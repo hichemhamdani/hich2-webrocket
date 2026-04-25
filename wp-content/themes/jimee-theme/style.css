@@ -1,7 +1,7 @@
 /*
-Theme Name: Jimee Cosmetics
-Theme URI: https://jimeecosmetics.com
-Description: Thème custom e-commerce pour Jimee Cosmetics — multi-marques cosmétiques.
+Theme Name: BP Theme
+Theme URI: https://github.com/hichemhamdani/BP-Webrocket
+Description: Thème blueprint e-commerce Webrocket — base WooCommerce multi-marques, à cloner et renommer par projet.
 Author: Web Rocket
 Author URI: https://web-rocket.dz
 Version: 1.0.0
@@ -9,7 +9,7 @@ Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
 License: Proprietary
-Text Domain: jimee
+Text Domain: bp-theme
 */
 
 /* ========== DESIGN TOKENS ========== */
