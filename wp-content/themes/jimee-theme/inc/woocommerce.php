@@ -638,6 +638,7 @@ add_filter( 'gettext', function( $translated, $text, $domain ) {
 
 // Remove "Payez en cash à la livraison" from emails (COD gateway instructions)
 add_action( 'init', function() {
+    if ( ! function_exists( 'WC' ) ) return;
     $gateways = WC()->payment_gateways();
     if ( isset( $gateways->payment_gateways['cod'] ) ) {
         remove_action( 'woocommerce_email_before_order_table', [ $gateways->payment_gateways['cod'], 'email_instructions' ], 10 );
